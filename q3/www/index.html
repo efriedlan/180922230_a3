@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FakeChimp</title>
+    <link rel="stylesheet" href="css/design.css">
+    <script src="js/chimpscript.js"></script>
+    <script src="https://use.fontawesome.com/9f1421d426.js"></script>
+  </head>
+  <body>
+
+      <img id="logo-color" src="img/logo-color.png" alt="Color Logo">
+      <img id="logo-bw" src="img/logo-black-white.png" alt="Black and White Logo">
+      <p id="title-heading">Get started with your account</p>
+      <p id="description">Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform</p>
+
+      <form name="chimpform" action="http://cp202-server.appspot.com/register_with_image" method="POST" enctype="multipart/form-data" target="_blank">
+        <p class="input-title">Email</p>
+        <input type="text" name="email" id="email">
+
+        <p class="input-title">Country</p>
+        <select id="country-dropdown" name = "country">
+          <option value = "Canada" selected>Canada</option>
+          <option value = "United States">United States</option>
+        </select>
+
+        <p class="input-title">Description</p>
+        <textarea id="image-description" name="description" rows="4"></textarea>
+
+        <input type="file" name="avatarImage" id="avatar-image">
+
+        <input type="submit" id="getstarted" value="Get Started!" onclick="return validateForm()">
+
+        <p id="creating">By clicking the "Get Started!" button, you are creating a FakeChimp account.</p>
+
+        <input type="hidden" name="student_id" id="student_id" value="180922230">
+      </form>
+
+      <footer>
+          <p>&copy;2019 All Rights Reserved. FakeChimp&reg; is a registered trademark of WLUCP202 Class.</p>
+          <a href="registrations_with_image/index.html">Click to see registrations</a>
+      </footer>
+  </body>
+</html>
